@@ -18,7 +18,7 @@ class HttpClientTest extends TestCase
     private $httpClient;
     private $httpClientStub;
 
-    function setUp()
+    function setUp(): void
     {
         $this->guzzleStub = $this->createMock(Guzzle::class);
         $this->responseStub = $this->createMock(Response::class);

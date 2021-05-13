@@ -17,7 +17,7 @@ class CredentialsFactoryTest extends TestCase
     private $responseStub;
     private $streamStub;
 
-    function setUp()
+    function setUp(): void
     {
         $this->credentialsFactory = new CredentialsFactory;
         $this->responseStub = $this->createMock(ResponseInterface::class);

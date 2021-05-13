@@ -11,7 +11,7 @@ class UpworkTest extends TestCase
 {
     private $upwork;
 
-    function setUp()
+    function setUp(): void
     {
         $this->upwork = new Upwork();
     }

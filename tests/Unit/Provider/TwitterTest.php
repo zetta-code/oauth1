@@ -11,7 +11,7 @@ class TwitterTest extends TestCase
 {
     private $twitter;
 
-    function setUp()
+    function setUp(): void
     {
         $this->twitter = new Twitter();
     }

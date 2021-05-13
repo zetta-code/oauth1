@@ -13,7 +13,7 @@ class UriParserTest extends TestCase
     private $uriParser;
     private $psrUriStub;
 
-    function setUp()
+    function setUp(): void
     {
         $this->uriParser = new UriParser;
         $this->psrUriStub = $this->createMock(UriInterface::class);

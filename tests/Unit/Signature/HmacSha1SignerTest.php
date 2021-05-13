@@ -16,7 +16,7 @@ class HmacSha1SignerTest extends TestCase
     private $clientCredentials;
     private $tokenCredentials;
 
-    function setUp()
+    function setUp(): void
     {
         $this->hmacSha1Signer = new HmacSha1Signer;
         $this->clientCredentials = new ClientCredentials('client_id', 'client_secret');

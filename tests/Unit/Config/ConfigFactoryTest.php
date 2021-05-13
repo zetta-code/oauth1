@@ -13,7 +13,7 @@ class ConfigFactoryTest extends TestCase
     private $configFactory;
     private $config;
 
-    function setUp()
+    function setUp(): void
     {
         $this->configFactory = new ConfigFactory;
 

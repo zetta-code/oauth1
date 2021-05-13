@@ -10,7 +10,7 @@ class RequestTest extends TestCase
 {
     private $requestConfig;
 
-    function setUp()
+    function setUp(): void
     {
         $this->request = new Request('POST', 'http://example.com', ['foo' => 'bar']);
     }

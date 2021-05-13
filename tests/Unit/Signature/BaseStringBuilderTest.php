@@ -14,7 +14,7 @@ class BaseStringBuilderTest extends TestCase
     private $baseStringBuilder;
     private $psrUri;
 
-    function setUp()
+    function setUp(): void
     {
         $this->uriParser = new UriParser;
         $this->baseStringBuilder = new BaseStringBuilder($this->uriParser);

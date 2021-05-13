@@ -11,7 +11,7 @@ class TokenCredentialsTest extends TestCase
 {
     private $tokenCredentials;
 
-    function setUp()
+    function setUp(): void
     {
         $this->tokenCredentials = new TokenCredentials('foo', 'bar');
     }

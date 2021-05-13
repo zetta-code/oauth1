@@ -30,7 +30,7 @@ class OAuth1Test extends TestCase
     private $responseStub;
     private $psrUriStub;
 
-    function setUp()
+    function setUp(): void
     {
         $this->httpClientStub = $this->createMock(HttpClientInterface::class);
         $this->requestFactoryStub = $this->createMock(RequestFactoryInterface::class);

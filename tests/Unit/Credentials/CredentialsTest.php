@@ -10,7 +10,7 @@ class CredentialsTest extends TestCase
 {
     private $credentialsStub;
 
-    function setUp()
+    function setUp(): void
     {
         $this->credentialsStub = $this->getMockForAbstractClass(Credentials::class, ['foo', 'bar']);
     }

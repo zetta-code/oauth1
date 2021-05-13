@@ -28,7 +28,7 @@ class ProtocolParameterTest extends TestCase
     private $psrUriStub;
     private $protocolParameter;
 
-    function setUp()
+    function setUp(): void
     {
         $this->configStub = $this->createMock(ConfigInterface::class);
         $this->signerStub = $this->createMock(SignerInterface::class);

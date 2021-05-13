@@ -15,7 +15,7 @@ class UriConfigTest extends TestCase
     private $uriParser;
     private $uriConfig;
 
-    function setUp()
+    function setUp(): void
     {
         $this->uris = [
             'base_uri' => 'http://example.com',

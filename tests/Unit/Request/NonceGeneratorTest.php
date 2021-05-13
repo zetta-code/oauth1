@@ -10,7 +10,7 @@ class NonceGeneratorTest extends TestCase
 {
     private $nonceGenerator;
 
-    function setUp()
+    function setUp(): void
     {
         $this->nonceGenerator = new NonceGenerator;
     }
@@ -25,7 +25,7 @@ class NonceGeneratorTest extends TestCase
     function it_can_generate_base_64_encoded_random_bytes()
     {
         // Must be a string.
-        $this->assertInternalType('string', $this->nonceGenerator->base64EncodedRandomBytes(10));
+        $this->assertIsString( $this->nonceGenerator->base64EncodedRandomBytes(10));
 
         // Base64 encoded ends with '='.
         $this->assertStringEndsWith('=', $this->nonceGenerator->base64EncodedRandomBytes(10));
@@ -47,7 +47,7 @@ class NonceGeneratorTest extends TestCase
     function it_can_generate_random_string()
     {
         // Must be alphanumeric with 32 characters.
-        $this->assertRegExp('/^[\w]{32}$/', $this->nonceGenerator->generate(32));
+        $this->assertMatchesRegularExpression('/^[\w]{32}$/', $this->nonceGenerator->generate(32));
 
         // Must be random.
         $this->assertNotEquals(

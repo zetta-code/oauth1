@@ -15,7 +15,7 @@ class PlainTextSignerTest extends TestCase
     private $clientCredentials;
     private $tokenCredentials;
 
-    function setUp()
+    function setUp(): void
     {
         $this->plainTextSigner = new PlainTextSigner();
         $this->clientCredentials = new ClientCredentials('client_id', 'client_secret');

@@ -25,7 +25,7 @@ class RequestFactoryTest extends TestCase
     private $tokenCredentialsStub;
     private $psrUriStub;
 
-    function setUp()
+    function setUp(): void
     {
         $this->authorizationHeaderStub = $this->createMock(AuthorizationHeaderInterface::class);
         $this->uriParserStub = $this->createMock(UriParserInterface::class);

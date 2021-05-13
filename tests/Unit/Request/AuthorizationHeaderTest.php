@@ -15,7 +15,7 @@ class AuthorizationHeaderTest extends TestCase
     private $temporaryCredentialsStub;
     private $tokenCredentialsStub;
 
-    function setUp()
+    function setUp(): void
     {
         $this->protocolParameterStub = $this->createMock(ProtocolParameterInterface::class);
         $this->authorizationHeader = new AuthorizationHeader($this->protocolParameterStub);

@@ -12,7 +12,7 @@ class CanGetSigningKeyTest extends TestCase
     private $canGetSigningKeyStub;
     private $clientCredentials;
 
-    function setUp()
+    function setUp(): void
     {
         $this->canGetSigningKeyStub = $this->getMockForTrait(CanGetSigningKey::class);
         $this->clientCredentials = new ClientCredentials('client_id', 'client_secret');

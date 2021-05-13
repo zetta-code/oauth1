@@ -14,7 +14,7 @@ class OAuth1FactoryTest extends TestCase
     private $config;
     private $plainTextSignerStub;
 
-    function setUp()
+    function setUp(): void
     {
         $this->config = [
             'client_credentials_identifier' => 'client_id',

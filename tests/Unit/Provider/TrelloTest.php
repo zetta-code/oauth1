@@ -11,7 +11,7 @@ class TrelloTest extends TestCase
 {
     private $trello;
 
-    function setUp()
+    function setUp(): void
     {
         $this->trello = new Trello();
     }

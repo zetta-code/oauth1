@@ -11,7 +11,7 @@ class TemporaryCredentialsTest extends TestCase
 {
     private $temporaryCredentials;
 
-    function setUp()
+    function setUp(): void
     {
         $this->temporaryCredentials = new TemporaryCredentials('foo', 'bar');
     }

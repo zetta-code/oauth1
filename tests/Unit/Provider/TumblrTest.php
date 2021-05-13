@@ -11,7 +11,7 @@ class TumblrTest extends TestCase
 {
     private $tumblr;
 
-    function setUp()
+    function setUp(): void
     {
         $this->tumblr = new Tumblr();
     }

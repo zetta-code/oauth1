@@ -10,7 +10,7 @@ class CanBuildBaseStringTest extends TestCase
 {
     private $canBuildBaseStringStub;
 
-    function setUp()
+    function setUp(): void
     {
         $this->canBuildBaseStringStub = $this->getMockForTrait(CanBuildBaseString::class);
     }

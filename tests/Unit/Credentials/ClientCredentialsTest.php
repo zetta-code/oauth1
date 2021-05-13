@@ -10,7 +10,7 @@ class ClientCredentialsTest extends TestCase
 {
     private $clientCredentials;
 
-    function setUp()
+    function setUp(): void
     {
         $this->clientCredentials = new ClientCredentials('foo', 'bar');
     }

@@ -13,7 +13,7 @@ class ProviderFactoryTest extends TestCase
     private $config;
     private $twitter;
 
-    function setUp()
+    function setUp(): void
     {
         $this->config = [
             'client_credentials_identifier' => 'client_id',

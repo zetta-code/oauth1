@@ -17,7 +17,7 @@ class ConfigTest extends TestCase
     private $uriParser;
     private $uriConfig;
 
-    function setUp()
+    function setUp(): void
     {
         $uris = [
             'base_uri' => 'http://example.com',
